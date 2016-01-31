@@ -4,4 +4,4 @@ from .swagger_stub import swagger_stub
 
 __author__ = 'Cyprien Guillemot'
 __email__ = 'cyprien.guillemot@gmail.com'
-__version__ = '0.1.0'
+__version__ = '0.1.1'

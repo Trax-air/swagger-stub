@@ -19,7 +19,7 @@ test_requirements = [str(i.req) for i in parse_requirements('requirements_dev.tx
 
 setup(
     name='swagger_stub',
-    version='0.1.0',
+    version='0.1.1',
     description="Generate a stub from a swagger file",
     long_description=readme + '\n\n' + history,
     author="Cyprien Guillemot",
