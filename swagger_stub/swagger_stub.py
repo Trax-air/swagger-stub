@@ -19,10 +19,12 @@ from swagger_parser import SwaggerParser
 class StubMemory(object):
     """Store data about calls made to the stub."""
 
-    def __init__(self):
+    def __init__(self, swagger_parser):
         self.memory = []
         self.mock_call = {}
         self.side_effect = {}
+
+        self.definitions = swagger_parser.definitions_example
 
     def add_call(self, action, path, body, query, status_code):
         """Add a call to the memory
@@ -250,7 +252,7 @@ def swagger_stub(swagger_files_url):
             httpretty.DELETE, re.compile(base_url + r'/.*'),
             body=get_data_from_request)
 
-        memory[base_url] = StubMemory()
+        memory[base_url] = StubMemory(s)
         yield memory[base_url]
 
     # Close httpretty

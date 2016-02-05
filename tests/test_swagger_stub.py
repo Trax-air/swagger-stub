@@ -41,6 +41,9 @@ def pet_definition_example():
 
 
 def test_swagger_stub(swagger_stub_test, pet_definition_example):
+    # Test data example
+    swagger_stub_test.definitions['Pet'] == pet_definition_example
+
     # Wrong url
     response = requests.get('http://localhost:8000/v2/error')
     assert response.status_code == 404
