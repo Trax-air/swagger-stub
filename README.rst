@@ -7,9 +7,9 @@
 .. image:: https://badges.gitter.im/Trax-air/swagger-stub.svg
   :alt: Join the chat at https://gitter.im/Trax-air/swagger-stub
   :target: https://gitter.im/Trax-air/swagger-stub?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge  
-.. image:: https://www.versioneye.com/user/projects/56b4a9340a0ff5003b97548a/badge.svg
+.. image:: https://www.versioneye.com/user/projects/56b4ab470a0ff5003b975492/badge.svg
   :alt: Dependency Status
-  :target: https://www.versioneye.com/user/projects/56b4a9340a0ff5003b97548a  
+  :target: https://www.versioneye.com/user/projects/56b4ab470a0ff5003b975492  
 
 swagger-stub
 ==============
