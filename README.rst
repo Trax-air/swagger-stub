@@ -6,10 +6,10 @@
   :alt: Code issues
 .. image:: https://badges.gitter.im/Trax-air/swagger-stub.svg
   :alt: Join the chat at https://gitter.im/Trax-air/swagger-stub
-  :target: https://gitter.im/Trax-air/swagger-stub?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge  
+  :target: https://gitter.im/Trax-air/swagger-stub?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
 .. image:: https://www.versioneye.com/user/projects/56b4ab470a0ff5003b975492/badge.svg
   :alt: Dependency Status
-  :target: https://www.versioneye.com/user/projects/56b4ab470a0ff5003b975492  
+  :target: https://www.versioneye.com/user/projects/56b4ab470a0ff5003b975492
 
 swagger-stub
 ==============
@@ -37,6 +37,9 @@ Example Usage
 
   # Then you can use this fixture anywhere you want like your API is really running.
   def test_swagger_stub(test_stub):
+      # Get a definition example
+      test_stub.definitions['Foo']
+
       # Check a simple call
       response = requests.get('http://foo.com/v1/bar/')
       assert response.status_code == 200
