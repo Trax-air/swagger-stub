@@ -71,12 +71,12 @@ def test_swagger_stub(swagger_stub_test, pet_definition_example):
     assert response.json() == pet_definition_example
 
     # Mock
-    swagger_stub_test.add_mock_call('get', '/test', {'mock': 'call'})
+    swagger_stub_test.add_mock_call('get', '/v2/test', {'mock': 'call'})
     response = requests.get('http://localhost:8000/v2/test')
     assert response.json() == {'mock': 'call'}
 
     # Side effect
-    swagger_stub_test.add_mock_side_effect('get', '/side', [{'test': '1'}, {'test': '2'}, {'test': '3'}])
+    swagger_stub_test.add_mock_side_effect('get', '/v2/side', [{'test': '1'}, {'test': '2'}, {'test': '3'}])
     response = requests.get('http://localhost:8000/v2/side')
     assert response.json() == {'test': '1'}
     response = requests.get('http://localhost:8000/v2/side')
@@ -84,7 +84,7 @@ def test_swagger_stub(swagger_stub_test, pet_definition_example):
     response = requests.get('http://localhost:8000/v2/side')
     assert response.json() == {'test': '3'}
 
-    swagger_stub_test.add_mock_side_effect('get', '/error', Exception)
+    swagger_stub_test.add_mock_side_effect('get', '/v2/error', Exception)
 
     with pytest.raises(Exception):
         response = requests.get('http://localhost:8000/v2/error')
