@@ -167,11 +167,7 @@ def get_data_from_request(request, uri, headers):
     swagger_parser = swagger_url[
         '{uri.scheme}://{uri.netloc}'.format(uri=data_url)]
 
-    # Check the base path
-    if not data_url[2].startswith(swagger_parser.base_path):
-        return 404, headers, ''
-
-    path = re.sub(r'^' + swagger_parser.base_path, '', data_url[2])
+    path = data_url[2]
     query = dict(parse_qsl(data_url[3]))
     action = request.method.lower()
 
