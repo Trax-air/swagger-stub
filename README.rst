@@ -1,18 +1,10 @@
 .. image:: https://travis-ci.org/Trax-air/swagger-stub.svg?branch=master
    :alt: Travis status
    :target: https://travis-ci.org/Trax-air/swagger-stub
-.. image:: https://www.quantifiedcode.com/api/v1/project/bab4f51f0bc6420591f7a6cfe426a1c9/badge.svg
-  :target: https://www.quantifiedcode.com/app/project/bab4f51f0bc6420591f7a6cfe426a1c9
-  :alt: Code issues
 .. image:: https://badges.gitter.im/Trax-air/swagger-stub.svg
   :alt: Join the chat at https://gitter.im/Trax-air/swagger-stub
   :target: https://gitter.im/Trax-air/swagger-stub?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
-.. image:: https://www.versioneye.com/user/projects/56b4ab470a0ff5003b975492/badge.svg
-  :alt: Dependency Status
-  :target: https://www.versioneye.com/user/projects/56b4ab470a0ff5003b975492
 .. image:: https://img.shields.io/pypi/v/swagger-stub.svg
-    :target: https://pypi.python.org/pypi/swagger-stub/
-.. image:: https://img.shields.io/pypi/dw/swagger-stub.svg
     :target: https://pypi.python.org/pypi/swagger-stub/
 
 swagger-stub
