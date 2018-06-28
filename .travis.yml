@@ -2,7 +2,7 @@ language: python
 python:
     - "3.4"
     - "2.7"
-    - pypy-6.0.0
+    - pypy
 script:
     python setup.py test
 deploy:
